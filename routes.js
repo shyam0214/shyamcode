@@ -23,7 +23,7 @@ async function auth(req, res, next) {
   }
 }
 
-routes.get("/userList", auth, async (req, res) => {
+routes.get("/userList", async (req, res) => {
   try {
     let user = [
       { name: "shaym", email: "shyam@gmial.com" },
